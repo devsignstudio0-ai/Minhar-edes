@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Redes Sociais</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-   <main>
 
-    <section id="telefone">
-        <iframe src="home.html" frameborder="0" name="tela" id="tela"></iframe>
+  <div class="wood-overlay" aria-hidden="true"></div>
+
+  <main class="layout">
+
+    <nav class="sidebar" aria-label="Redes sociais">
+
+      <a href="home.html" target="tela" aria-label="Página inicial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,220,140,0.9)" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 9.75L12 3l9 6.75V21a1 1 0 01-1 1H4a1 1 0 01-1-1V9.75z"/>
+          <path d="M9 22V12h6v10"/>
+        </svg>
+      </a>
+
+      <a href="youtube.html" target="tela" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="5" fill="#FF0000"/>
+          <path d="M21.8 8s-.2-1.4-.8-2c-.77-.8-1.62-.81-2.01-.86C16.19 5 12 5 12 5s-4.19 0-7 .14c-.4.05-1.24.06-2.01.86-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.77.8 1.8.77 2.26.86C6.8 19 12 19 12 19s4.19 0 7-.15c.4-.05 1.24-.06 2.01-.86.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8z" fill="#FF0000"/>
+          <polygon fill="white" points="10,8.5 15.5,12 10,15.5"/>
+        </svg>
+      </a>
+
+      <a href="instagram.html" target="tela" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%"   stop-color="#f09433"/>
+              <stop offset="25%"  stop-color="#e6683c"/>
+              <stop offset="50%"  stop-color="#dc2743"/>
+              <stop offset="75%"  stop-color="#cc2366"/>
+              <stop offset="100%" stop-color="#bc1888"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig-grad)"/>
+          <circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="1.8"/>
+          <circle cx="17.5" cy="6.5" r="1.2" fill="white"/>
+        </svg>
+      </a>
+
+      <a href="twitter.html" target="tela" aria-label="Twitter / X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="5" fill="#000"/>
+          <path d="M5 5h4l3.5 4.5L16.5 5H19l-5 6.5L20 19h-4l-4-5-4.5 5H5l5.5-7L5 5z" fill="white"/>
+        </svg>
+      </a>
+
+      <a href="facebook.html" target="tela" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="5" fill="#1877F2"/>
+          <path d="M15.5 7H13.5C12.9 7 12.5 7.4 12.5 8v2H15l-.3 2.5H12.5V19h-3v-6.5H8V10h1.5V8C9.5 5.8 11 5 13 5c.8 0 1.7.1 2.5.2V7z" fill="white"/>
+        </svg>
+      </a>
+
+      <a href="git.html" target="tela" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="rgba(240,230,210,0.95)" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49v-1.7c-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.11-1.49-1.11-1.49-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.4 9.4 0 012.5-.34c.85 0 1.7.11 2.5.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.81c0 .27.18.59.69.49C19.13 20.62 22 16.79 22 12.26 22 6.58 17.52 2 12 2z"/>
+        </svg>
+      </a>
+
+    </nav>
+
+    <section aria-label="Tela do smartphone">
+      <div class="phone-wrap" role="img" aria-label="Smartphone exibindo conteúdo da página selecionada">
+        <div class="phone-frame"    aria-hidden="true"></div>
+        <div class="phone-notch"    aria-hidden="true"></div>
+        <div class="phone-side-btn" aria-hidden="true"></div>
+        <div class="phone-vol-btn"  aria-hidden="true"></div>
+        <div class="phone-screen">
+          <iframe src="home.html" name="tela" title="Conteúdo da página selecionada"></iframe>
+        </div>
+        <div class="phone-home-btn" aria-hidden="true"></div>
+      </div>
     </section>
 
-        <section id="redes">
-           <a href="home.html" target="tela"><img src="estilos/imagens/logo-home.jpg" alt="home"></a><br>
-            <a href="youtube.html" target="tela"> <img src="estilos/imagens/logo-youtube.jpg" alt="youtube"></a><br>
-             <a href="instagram.html" target="tela"><img src="estilos/imagens/logo-instagram.jpg" alt="instagram"></a><br>
-              <a href="twitter.html" target="tela"><img src="estilos/imagens/logo-twitter.jpg" alt="twitter"></a><br>
-               <a href="facebook.html" target="tela"><img src="estilos/imagens/logo-facebook.jpg" alt="facebook"></a><br>
-                <a href="git.html" target="tela"><img src="estilos/imagens/logo-github.jpg" alt="github"></a><br>
-        </section>
-        
-   </main>
+  </main>
+
 </body>
 </html>
